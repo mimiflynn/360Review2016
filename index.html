@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web Technology Basics - Mimi Flynn</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="css/overrides.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Basics of Web Technologies
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Purpose
+              Simply explain web technologies so designers can have a better understanding of technical constraints and possibilities.
+            </script>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## HTML
+              The container of all things relevant to the page. Holds text and images.
+
+              Categorizes the content of the page into logical chunks.
+
+              - Headers
+              - Paragraphs
+              - Lists
+              - Links
+              - And more!
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## HTML
+              ```
+              <h1>HTML</h1>
+              <p>The container of all things relevant to the page. Holds text and images.</p>
+              <p>Categorizes the content of the page into logical chunks.</p>
+              <ul>
+                <li>Headers</li>
+                <li>Paragraphs</li>
+                <li>Lists</li>
+                <li>Links</li>
+                <li>And more!</li>
+              </ul>
+              ```
+            </script>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## CSS
+
+              Defines content style.
+
+              - Colors
+              - Fonts
+              - Spacing
+              - Animation
+              - Background
+              - Icons
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## CSS
+              ```
+              h1 {
+                font-family: sans-serif;
+                color: red;
+                height: 30px;
+                line-height: 40px;
+                margin-bottom: 15px;
+              }
+              ```
+            </script>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## JavaScript
+              Business and itneraction logic that brings the page to life by controlling the HTML and CSS accordingly.
+              - retrieves data from server to generate and display HTML according to business needs and design
+              - adds or removes classes in order to change CSS styles and animations
+            </script>
+          </section>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
